@@ -1,0 +1,131 @@
+*{
+  background-color: #212529;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.link-container {
+  position: absolute;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link::before{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: .3s ease;
+}
+
+.link:hover, .link i:hover {
+  color: #ca6035;
+}
+
+.link:hover::before {
+  background-color: #ca6035;
+  width: 100%;
+}
+
+.main-container {
+  margin-top: 90px;
+  width: 100%;
+  position: absolute;
+}
+
+.main-img {
+  width: 100%;
+  animation: floating 3s ease-in-out 0s infinite alternate-reverse;
+  padding-right: 90px;
+}
+
+.text-container {
+  padding-left: 6em;
+}
+
+.hi {
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 58px;
+}
+
+.about {
+  font-size: 17px;
+  font-weight: 200;
+  opacity: .8;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+    transform: translatey(0px);
+	}
+
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.main-container .doodle {
+  background: none;
+  width: 150px;
+  animation: rotate 20s ease-in-out 0s infinite;
+}
+
+.main-container .doodle-1 {
+  position: relative;
+  bottom: 32rem;
+  left: 5em;
+  animation: rotate 20s ease-in-out 0s infinite;
+}
+
+.main-container .doodle-2 {
+  width: 150px;
+  position: relative;
+  bottom: 11rem;
+  left: 17em;
+}
+
+.social-icons .icon {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: #ca6035;
+  transition: .3s ease;
+}
+
+.icon:hover{
+  border-radius: 50%;
+  color: #ca6035;
+  background-color: #ca5f3500;
+}
+
+i {
+  background: none;
+}

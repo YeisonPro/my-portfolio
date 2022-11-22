@@ -1,0 +1,77 @@
+.about-me {
+  margin-bottom: 3rem;
+}
+
+.about-me::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 5em;
+  margin-top: 8px;
+  background: #498383;
+}
+
+.skills {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.back {
+  margin-right: 30px;
+}
+
+.back::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: .3s ease;
+}
+
+.back:hover::before {
+  background-color: #498383;
+  width: 40%;
+}
+
+.work::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  left: 5.4rem;
+  bottom: -10px;
+  transition: .3s ease;
+}
+
+.work:hover::before {
+  background-color: #498383;
+  width: 50%;
+}
+
+.work:hover, .back:hover {
+  color: #498383;
+}
+
+#hola:hover {
+  color: #498383;
+}
+
+.social-icons .icon {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: #498383;
+  transition: .3s ease;
+}
+
+.icon:hover{
+  border-radius: 50%;
+  color: #498383;
+  background-color: #ca5f3500;
+}

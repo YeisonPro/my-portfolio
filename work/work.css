@@ -1,0 +1,94 @@
+.work-content {
+  margin-top: 9em;
+}
+
+.my-work {
+  font-weight: 500;
+  opacity: 1;
+  padding-bottom: 0.5rem;
+}
+
+.my-work::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 4.2em;
+  margin-top: 8px;
+  background: #598349;
+}
+
+.about-work {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.social-icons .icon-work {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: #598349;
+  transition: .3s ease;
+}
+
+
+.icon-work:hover{
+  border-radius: 50%;
+  color: #598349;
+  background-color: #ca5f3500;
+}
+
+.back-about::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: .3s ease;
+}
+
+.back-about:hover::before {
+  background-color: #598349;
+  width: 65%;
+}
+
+.back-about:hover {
+  color: #598349;
+}
+
+#work-arrow:hover {
+  color: #598349;
+}
+
+.image {
+  padding: 2rem;
+}
+
+.img-box {
+  border-radius: 20px;
+}
+
+.lang {
+  background-color: #598349;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 2px 5px;
+  border-radius: 100px;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #598349;
+}
+
+.soon {
+  margin-top: 18px;
+  font-weight: 100;
+  opacity: .4;
+}
